@@ -5,6 +5,8 @@ $Object = [];
 $Map = [];
 $GroupRepresentation = [];
 $ScopeRepresentation = [];
+//
+
 
 $AccessToken_Access = array(
     'roles' => array(
@@ -1977,6 +1979,11 @@ $ClientRepresentation = array(
         'location' => 'json',
         'type' => 'object',
         'properties' => $ResourceServerRepresentation,
+        'required' => false
+    ),
+    'alwaysDisplayInConsole' => array(
+        'location' => 'json',
+        'type' => 'boolean',
         'required' => false
     ),
     'baseUrl' => array(
